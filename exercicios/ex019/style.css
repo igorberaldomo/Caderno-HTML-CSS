@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/*
+    em HTML é id = em CSS é #
+    em HTML é class = em CSS é .
+*/
+body{
+    background-color: rgb(47, 255, 189);
+    font-family: Arial, Helvetica, sans-serif
+}
+h1{
+    color: black(255, 255, 255);
+}
+h1#principal{ /* é importante resaltar que além das configurações principais por exemplo o h1 acima está com a cor verde o h1#principal vai ter seu alinhamento no meio */
+    text-align: center;
+    background-color:rgb(1, 68, 1);
+    color: white;
+}
+h2{
+    color: rgb(73, 64, 17);/* você pode usar de maneira h2. basico para fazer somente os h2basicos mudarem de cor ou você pode fazer uma classe .básico para afetar tudo que é básico independente de estar dentro de um h2 */
+}
+.basico{
+    color: rgb(13, 133, 4);
+    font-weight: 700;
+}
+.intermediário{
+    color: rgb(141, 118, 5);
+    font-weight: 700;
+}
+.avançado{
+    color: rgb(146, 16, 4);
+    font-weight: 700;
+}
+.destaque{
+    background-color: yellow;
+}

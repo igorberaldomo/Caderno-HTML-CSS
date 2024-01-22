@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <!-- para fazer um gradiente em um documento, você usa o comando backgroun-image, seleciona o tipo de gradienteno caso "linear-gradient" e dentro dos parênteses a primeira casa vai ser a direção "to right" ou "to left", a segunda casa vai ser a cor que vai ficar na direção,por exemplo se você selecionou to 'RIGHT' e na segunda casa "BLUE" o azul vai ficar na esquerda, a terceira casa é para que cor vai terminar-->
+    <style>
+        *{
+            height:100% ;/* configuração global da css*/
+        }
+        body{ 
+            background-image: linear-gradient(to bottom, #3198e2 30%, #6d59c0,#b93590,#e33f5f,#fdd579);/* alem de to + direção, você pode fazer o angulo+deg para mudar a direção. alem disso voce pode explorar outra direções de gradiente, por exemplo o 
+            radial - gradient(cirucular). Apos a cor você pode colocar uma porcentagem por exemplo linear-gradient(to position,blue 10%, white  50%) para determinar a porcentagem de determinada cor deve ocupar*/
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+    
+</body>
+</html>

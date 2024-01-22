@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+        font-family:Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none; /*retirar o sublinhado*/
+            font-weight: bold;
+        }
+        a:visited{/*retirar o sublinhado*/
+            color:darkred;
+        }
+        a:hover{
+            color:black;/*quando passar por cima o sublinhado aparece e a cor da fonte fica preta*/
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;/*quando for clickado e somente quanto for clicado o link fica amarelo*/
+        }
+        /*a::after{
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }*/
+        .especial{
+            background-color: rgba(85, 70, 83, 0.322);
+        }
+        .especial::before{/*pseudoelemento "tag" + "::"+ nome da pseudo-classe */
+            content:'⇒';
+        }
+        .especial::after{
+            content:'⇐';
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href=" https://www.youtube.com/@CursoemVideo" target="_blank" class="especial">Cursoemvideo</a></li> <!-- abre o site em uma outra aba-->
+        <li><a href="https://www.youtube.com/@crashcourse" target="_blank"> Crashcourse</a></li>
+        <li><a href="https://www.youtube.com/@SimplicodeOfficial" target="_blank">Simplicode</a></li>
+    </ul>
+</body>
+</html>
