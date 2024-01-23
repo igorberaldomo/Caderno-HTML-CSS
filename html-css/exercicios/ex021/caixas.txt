@@ -1,0 +1,17 @@
+numa caixa tem várias palavras, ela vai ser um quadrado que tem uma altura "height" e uma largura "Width".
+
+Em volta do quadrado da caixa tem a borda "border" que por configuração fica bem perto das letras. 
+
+Para aumentar a "border" você usa o parâmetro "padding" que vai adicionar uma faixa tanto na largura quanto na altura entre a "border" e a escrita. 
+
+A margem "margin" é o espaço fora da borda, entre a borda e o outro objeto.
+
+Ou seja o "padding" aumenta o parametro interno da caixa e o "margin" aumenta o espaço entre a caixa e o anterior, superior,posterior, e subspostos objetos
+
+o contorno ou "outiline" existe fora da borda e fora do elemento
+
+Tipo de caixa:
+
+     box-level: uma caixa box level sempre vai pular na linha de baixo, vai ocupar a largura da tela inteira e depois vai continuar o texto que estava fora da caixa normalmente.
+
+     inline-level: uma caixa inline-level vai cotinuar na mesma linha usando o espaço necessário para exibir o conteúdo e não pula a linha continuando o texto diretamente depois da caixa
