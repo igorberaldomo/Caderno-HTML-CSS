@@ -1,0 +1,6 @@
+body{
+    background-image: url(../imagens/pattern002.png);
+    background-size: 100px 100px;/* automaticamente duplica a imagem até o largura e a altura do navegador, com as dimensões sendo primeiro largura depois altura*/
+    background-repeat: repeat; /* o default é o repeat, alem disso tem o no-repeat para para de repitir, o repeat-x para repetir somente na horizontal, o repeat-y para repitir somente na vertical, sempre partindo do canto superior esquerdo como default*/
+
+}
