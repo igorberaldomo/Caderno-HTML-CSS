@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo fixo da tela</title>
+    <style>
+        body{
+            height: 100vh;/* lembrar de colocar o height 100vh para cobrir 100% do modem*/
+            background-color: black;/*sempre configure a cor de fundo pois a imagem é o ultimo a carregar, e o usuário pode começar a usufruir do texto enquanto ela carrega*/
+            background-image: url('imagens/wallpaper002.jpg');
+            background-position: center center;/* centraliza a imagem*/
+            background-repeat: no-repeat;
+            background-size: cover; /* o background-size "cover" vai contar a imagem de acordo com o alinhamento para ficar no fundo, "contain" faz com que a imagem fica 100% exibida*/
+            background-attachment: fixed; /* o background attachment é o vinculo da imagem com o fundo o default e o "scroll" em que a imagem de fundo vai rolar com a barra, porem tem a opção "fixed" que prende a imagem de fundo enquanto você rola a barra*/
+
+            /* A shorthand background segue a seguinte ordem color > image > position > repeat > [size](não funciona) > attachment*/
+            /*background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;*/
+        }
+        main{
+            background-color: white;
+            max-width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero labore, quo incidunt alias autem aliquid exercitationem excepturi quas recusandae sapiente eligendi. Nihil ipsa molestias dicta facilis! Quaerat cumque officia consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quidem inventore eum possimus cupiditate libero corrupti nobis dolores delectus, laudantium beatae animi. Laborum odio perferendis minima dignissimos possimus fuga ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur enim accusantium veritatis necessitatibus ex quas esse veniam, porro illo saepe cumque, odio hic nobis aliquid harum aliquam ipsa incidunt similique!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero labore, quo incidunt alias autem aliquid exercitationem excepturi quas recusandae sapiente eligendi. Nihil ipsa molestias dicta facilis! Quaerat cumque officia consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quidem inventore eum possimus cupiditate libero corrupti nobis dolores delectus, laudantium beatae animi. Laborum odio perferendis minima dignissimos possimus fuga ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur enim accusantium veritatis necessitatibus ex quas esse veniam, porro illo saepe cumque, odio hic nobis aliquid harum aliquam ipsa incidunt similique!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero labore, quo incidunt alias autem aliquid exercitationem excepturi quas recusandae sapiente eligendi. Nihil ipsa molestias dicta facilis! Quaerat cumque officia consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quidem inventore eum possimus cupiditate libero corrupti nobis dolores delectus, laudantium beatae animi. Laborum odio perferendis minima dignissimos possimus fuga ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur enim accusantium veritatis necessitatibus ex quas esse veniam, porro illo saepe cumque, odio hic nobis aliquid harum aliquam ipsa incidunt similique!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero labore, quo incidunt alias autem aliquid exercitationem excepturi quas recusandae sapiente eligendi. Nihil ipsa molestias dicta facilis! Quaerat cumque officia consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quidem inventore eum possimus cupiditate libero corrupti nobis dolores delectus, laudantium beatae animi. Laborum odio perferendis minima dignissimos possimus fuga ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur enim accusantium veritatis necessitatibus ex quas esse veniam, porro illo saepe cumque, odio hic nobis aliquid harum aliquam ipsa incidunt similique!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero labore, quo incidunt alias autem aliquid exercitationem excepturi quas recusandae sapiente eligendi. Nihil ipsa molestias dicta facilis! Quaerat cumque officia consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quidem inventore eum possimus cupiditate libero corrupti nobis dolores delectus, laudantium beatae animi. Laborum odio perferendis minima dignissimos possimus fuga ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur enim accusantium veritatis necessitatibus ex quas esse veniam, porro illo saepe cumque, odio hic nobis aliquid harum aliquam ipsa incidunt similique!
+        </p>
+
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: relative; /*o que contém sempre será relativo, ele é default*/
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+        }
+        #conteudo{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: absolute;/* o que é contido sempre será absoluto pois uma vez que é colocado como absoluto você pode mexer nas configurações left e top*/
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            
+            margin: auto;
+
+            left:50%;
+            top:50%;
+            transform: translate(-50%, -50%);/*transforme é mecher em qualquer caixa aplicando alguma alteração nela. A operação translate vai mexer na posição do componente, o primeiro número puxa o objeto para direita se positivo e para esquerda se negativo. o segundo número vai puxar o objeto para baixo se positivo e para cima se negativo.
+            
+            aplicando translate(-50% , -50%) você Centraliza o objeto no meio do conteiner
+            */
+        }
+    </style>
+</head>
+<body>
+    <section id = "container">
+        <article id = "conteudo">
+
+        </article>
+    </section>
+    
+</body>
+</html>
