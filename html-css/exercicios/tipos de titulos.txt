@@ -1,6 +1,0 @@
-HIERARQUIA DOT TITULOS
-titulo principal
-
-subtitulos
-
-assuntos

@@ -1,7 +1,0 @@
-Para achar imagens que possam ser usadas você deve clicar em todas as licenças e selecionar
-("Livre para modificar, compartilhar e usar comercialmente")
-O formato jpeg é o melhor formato para compactação
-
-O formato PNG é compactação limitada e transparencia
-
-O formato gif é para transparencia e animação
