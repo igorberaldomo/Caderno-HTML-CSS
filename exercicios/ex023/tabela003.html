@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 300px;
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de tabelas</h1>
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td> <!-- para que a celula 'B' expanda para ocupar duas colunas, ele continua ocupando o mesmo espaço na linha, então a expansão será do tipo coluna logo usa-se o colspan= "numero de colunas a serem ocupadas" -->
+        </tr>
+        <tr>
+            <td rowspan="3">D</td><!-- o objetivo original era de expandir a celula "D" para 3 linhas mas deletando as celulas 'G' e 'J' não mantém a tabela travada colapsando-a-->
+            <td>E</td>
+            <td  rowspan="2">F</td><!-- para que a celula 'F' expanda para ocupar duas linhas, ele continua ocupando o mesmo espaço na coluna, então a expansão será do tipo linha logo usa-se o rollspan= "numero de linhas a serem ocupadas" -->
+        </tr>
+        <tr>
+            <td>H</td>
+        </tr>
+        <tr>
+            <td colspan="2">L</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
