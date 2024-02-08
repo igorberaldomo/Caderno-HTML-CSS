@@ -21,7 +21,7 @@ main {
     position: relative;
 }
 section#telefone{
-    height: 627px;
+    height: 657px;
     width: 311px;
     background: url("../imagens/frame-iphone.png") no-repeat; /* cria a moldura do celular*/
 
