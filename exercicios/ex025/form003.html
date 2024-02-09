@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="imedia">Media</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.5" required><!-- para o input:number somente aceita numeros e traços, também você deve utilizar o atributo min e max para colocar o intervalo do número; o atributo step é o menor incremento possivel de uma nota-->
+        </p>
+        <p>
+            <label for="imes">Período letivo</label>
+            <input type="month" name="mes" id="imes" value="2020/07"> <!-- input:month não é compativel no mozila firefox - 09/02/2024-->
+        </p>
+        <p>
+            <label for="idia"></label>
+            <input type="date" name="dia" id="idia" value="2020-07-14"><!-- input:date a opção mais completa para entrada de data, testado no firefox, edge e crome em todos funciona- 09/02/2024-->
+        </p>
+        <p>
+            <label for="ihora">Horário da prova</label>
+            <input type="time" name="hora" id="ihora"> <!--input:time imput para horário no padrão "hora:minutos"-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+
+
+    </form>
+</body>
+</html>
