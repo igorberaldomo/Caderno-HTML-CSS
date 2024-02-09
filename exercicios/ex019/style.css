@@ -17,7 +17,7 @@ h1#principal{ /* é importante resaltar que além das configurações principais
     color: white;
 }
 h2{
-    color: rgb(73, 64, 17);/* você pode usar de maneira h2. basico para fazer somente os h2basicos mudarem de cor ou você pode fazer uma classe .básico para afetar tudo que é básico independente de estar dentro de um h2 */
+    color: rgb(73, 64, 17);/* você pode usar de maneira h2. basico para fazer somente os h2 >basicos mudarem de cor ou você pode fazer uma classe .básico para afetar tudo que é básico independente de estar dentro de um h2 */
 }
 .basico{
     color: rgb(13, 133, 4);

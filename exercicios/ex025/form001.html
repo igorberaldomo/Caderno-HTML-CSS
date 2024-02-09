@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <Form action="cadastro.php" method="post" autocomplete="off"><!--cria o formulário, todos os parametros devem estar dentro dessa div;autocomplete dá sugestões do que você quer escrever em determinado site; action dispara uma ação para enviar o formulário; por padrão o metodo, method="GET" que coloca os dados na url, porem você pode mudar o method para "POST" para não aparecer na url, porem se você estiver no firefox você pode seguir oseguinte caminho para achar esses dados inspecionar >rede >arquivo.php ou arquivo.JavaScript, vai abrir uma pequena caixa do lado direito, clique em requisição > dados do formulário.-->
+        <!-- Usa-se o 'get' quando dados não forem sensiveis ou de até 3000 bites de tamanho , usa-se o 'post' quando o dados forem sensiveis, fotos ou videos, aprender HTTPS para trabalhar com senha, endereço-->
+        <p><label for="inome">Nome: </label><!--o label serve para criar uma relação entre uma palavra, no caso "Nome", e o input. por convenção todo id vai ser i+nome-->
+            <input type="text" name="nome" id="inome"></p> <!--usa-se o input text para criar as caixas de texto para coletar dados-->
+        <p><label for="isobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="enviar"></p><!--usa-se o input:submit para criar um botão, use o parametro value para adicionar o texto necessário para explicar a ação nesse caso "enviar"-->
+    </Form>
+</body>
+</html>

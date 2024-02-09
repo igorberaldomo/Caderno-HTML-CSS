@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on"></form><!-- já que é usuário é sensivel usa-se o method ="post"-->
+    <p>
+        <label for="iusu">Usuário</label>
+        <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="nome do usuário" autocomplete="username"><!-- o atributo required faz com que você tenha que preencher o campo para enviar, o atributo minlength serve para colocar o minimo de caracteres necessário para postagem, o atributo maxlength adiciona o maximo de caracteres que você pode por no input, o atributo size muda o tamanho da caixa, se o numero de letras passar do tamanho da caixa acontece rolagem lateral, o atributo placeholder="dica" escreve temporáriamente dentro da caixa até que o usuário escreva o seus dados; para a usagem do autocomplete você TEM que estar com o autocomplete="on" no form alem disso em cada input você tem que dizer no que você quer que ele use o autocomplete-->
+    </p>
+    <p>
+        <label for="isen">Senha</label>
+        <input type="password" name="sen" id="isen" required minlength="5" maxlength="15" placeholder="min 8 caracteres"> <!-- para a senha usa-se o input:pasword-->
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar"><!-- para limpar os dados usa-se input:reset-->
+    </p>
+    
+</body>
+</html>
