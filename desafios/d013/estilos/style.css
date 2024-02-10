@@ -32,7 +32,6 @@ section#telefone{
     transform: translate(-50%, -50%);/* centraliza a moldura do celular*/
 }
 iframe{
-    background-color: white;
     position: relative;
     top: 78px;
     left: 20px;/* configura o tamanho do iframe no perimetro interno do celular*/
