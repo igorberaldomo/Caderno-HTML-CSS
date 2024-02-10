@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <p>
+        <label for="icor">Cor:</label>
+        <input type="color" name="cor" id="icor"><!--input tipo cor é para selecionar a cor enviando o codigo hexadecimal-->
+    </p>
+    <p>
+        <label for="inivel">Nível de satisfação</label>
+        <input type="range" name="nivel" id="inivel" min="1" max="5"><!--Input tipo range tem o valor minimo de 0 e maximo de 100 por default, porem você pode usar os atributos min e max para definir a range-->
+    </p>
+    <label for="ifoto">Foto do perfil</label>
+    <input type="file" name="foto" id="ifoto"><!-- usa-se Input:file para que o usuário possa enviar uma foto, o Input:foto necessita de funcionabilidades do tipo php para exercer a mesma função -->
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limper">
+    </p>
+</body>
+</html>
