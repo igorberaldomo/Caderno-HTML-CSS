@@ -1,0 +1,7 @@
+Media queries = media type + media features 
+são efeitos puramente de CSS que permitem a mudança de conteúdo para diferentes formatos de consumo
+
+Media type: tipo de midia
+
+Media features: caracteristicas de medias
+
