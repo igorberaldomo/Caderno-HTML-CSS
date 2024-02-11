@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <p>
+        <label for="in1"> Número 1: </label>
+        <input type="number" name="n1" id="in1" min="0" max="50" required ><!--aqui usa-se a linguagem Javascript para mudar o valor interno da variavel isoma. Você tem que colocar oninput en todas as linhas de código utilizando esse método, porem você pode condensar o seu progama criando uma pagina com <script src ="nome da pagina.js"> e o seguinte código
+            let n1 = window.document.getElementById(in1) pega a primeira variavel pela id = in1
+            let n2 = window.document.getElementById(in2) pega a segunda variavel pela id = in2
+            let res =window.document.getElementById(isoma) pega a variavel do resultado pela id = isoma
+            res.innerHTML = Number(n1) +Number(n2) modifica a variavel resultado com a soma dos numeros dentro das variáveis
+        -->
+    </p>
+    <p>
+        <label for="in2"> Número 2: </label>
+        <input type="number" name="n2" id="in2" min="0" max="50" required>
+    </p>
+    <p>
+        <label for="isoma"> Soma: </label>
+        <output name="soma" id="isoma">0</output> <!-- A tag output NÃo é para calcular e enviar, ela é para calcular e mostrar. Somente a tag input e suas variações são enviadas -->
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</body>
+</html>

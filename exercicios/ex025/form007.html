@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="Estado" id="iest"><!-- uma div select serve para que o usuário selecione dentro de determinado grupo uma opção, é necessário usar a div "option" com um atributo value="" para escrever as opções, pode-se usar o optgroup com atributo label="nome esplicativo" para separar gru pos distintos ou regiões -->
+                <option value="" selected>>---Escolha---<</option><!-- Aqui obriga a selecionar uma das opções-->
+                <optgroup label="Região Sul" >
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+                
+                <optgroup label="Região Sudeste"><!-- cria um grupo de opções-->
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="ES">Espirito Santo</option>
+                </optgroup>
+                
+                <optgroup label="Região Centro-Oeste">
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="GO">Goiás</option>
+                    <option value="DF">Distrito Federal</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PI">Piauí</option>
+                    <option value="CE">Ceará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="BA">Bahía</option>
+                </optgroup>
+                <optgroup label="Região Norte">
+                    <option value="AC">Acre</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="PA">Pará</option>
+                    <option value="AP">Amapá</option>
+                    <option value="TO">Tocantins</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof"><!--o atributo list ="nomedalista" serve para que uma determinada lista apareça, isso depende dela estar dentro de um div "datalist" com uma id="nomedalista" e com as opções dentro da div "option"-->
+            <datalist id = "lstprof"> <!-- Aqui sugere as profissões mas não obriga a seleciona-las-->
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contador</option>
+                <option value="DEV"> Desenvolvedor</option>
+                <option value="Prof">Professor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem: </label><br> <!-- adicionar o <br> para colocar o titulo em cima-->
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea><!-- A div "textarea" coloca uma área para escrever uma mensagem. É importante resaltar que os atributos "cols" e "rows" NÃO é o numero maximo de linhas é o tamanho da caixa de texto-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+  
+</body>
+</html>
