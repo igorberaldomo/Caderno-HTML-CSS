@@ -1,6 +1,6 @@
 
 body{
-    font-family: Arial, Helvetica, sans-serif;/* fontes generias: san-serif(sem serifa), serif(serifada), e monospace(monoespaçada) são tipos de fonte que todos despositivos tem logo independente do dispositivo que vai ser rodado ele vai escolher uma fonte com as caracteristicas desse grupo*/
+    font-family: Arial, Helvetica, sans-serif;/* fontes genéricas: san-serif(sem serifa), serif(serifada), e monospace(monoespaçada) são tipos de fonte que todos despositivos tem logo independente do dispositivo que vai ser rodado ele vai escolher uma fonte com as caracteristicas desse grupo*/
     /* Medidas Absolutas: mm, cm, in, ox, pt, pc são medidas absolutas onde não importa o meio em que esteja ela vai ser a mesma
 
     Medidas Relativas: em(altura relativa a altura da letra m), ex(altura relativa a altura da letra "x minuscula" que é usada para determinar o resto das letras de uma fonte),rem( altura relativa ao root, fonte presente no body),vw(largura da tela en que esta vendo),vh(altura da tela en que esta vendo), %(porcentagem)

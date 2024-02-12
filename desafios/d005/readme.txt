@@ -1,0 +1,1 @@
+O autor Gustavo Guanabara deixou claro para fazer com os perfils pessoais logo a diferença entre plataformas.
