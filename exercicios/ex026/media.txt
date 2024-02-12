@@ -5,3 +5,4 @@ Media type: tipo de midia
 
 Media features: caracteristicas de medias
 
+Tipical device breakpoints: são numeros que mudam de tempo em tempo que indicam o tamanho e resolução de uma tela
