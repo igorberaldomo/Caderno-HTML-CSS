@@ -8,6 +8,8 @@
 :root{
     --cor1:#49a09d; /*aplicando cores em variaveis*/
     --cor2:#5f2c82;
+    --cor3:#2d6462;
+    --cor4:#6cd3cf;
 }
 
 *{
@@ -35,18 +37,73 @@ section#login{
 
     background-color: white;
     width:250px;
-    height: 500px;
+    height: 515px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgb(0, 0, 0.450);
+
+    transition: width .3s height.3s;/* determina o tempo necessário para a transição*/
+    transition-timing-function: ease;/*criando uma transição suave*/
 }
-section#login >div#imagem{
+section#login > div#imagem{
     display: block;
     background: var(--cor2) url(../imagem/pexels-scott-webb-139198.jpg) no-repeat;
     background-size: cover;
     background-position: left bottom;
     height:200px;
 }
-section#login >div#formulário{
+section#login > div#formulário{
     display: block;
     padding:10px;
+}
+div#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+div#formulario>p{
+    font-size: 0.8em;
+}
+form >div.campo{
+    background-color: var(--cor2);
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+div.campo > label{
+    display: none;
+}
+form > input[type = submit]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form > input[type=submit]:hover{
+    background-color:var(--cor3) ;
+}
+form > a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 10px;
+    background-color: white;
+    color: var(--cor3);
+    border: 1px solid var(--cor3);
+    border-radius: 7px;
+    text-decoration: none;
+}
+form > a.botao:hover{
+    background-color: var(--cor4);
+}
+form > a.botao>i{
+    font-size: 0.8em;
 }
